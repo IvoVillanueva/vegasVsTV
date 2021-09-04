@@ -24,7 +24,7 @@ theme_ivo <- function() {
 
 # Data Wrangler -----------------------------------------------------------
 
-e <- espnscrapeR::get_nfl_schedule(2021)
+e <- get_nfl_schedule(2021)
 
 night <- e %>%
   filter(season == 2021, broadcast_name %in% c("NBC", "ESPN"), type == 2) %>%
