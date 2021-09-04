@@ -4,7 +4,6 @@
 library(tidyverse)
 library(rvest)
 library(espnscrapeR)
-library(lubridate)
 library(janitor)
 library(ggimage)
 library(ggtext)
