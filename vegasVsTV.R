@@ -47,8 +47,8 @@ vegas <- url %>%
   read_html() %>%
   html_element("table:nth-of-type(2) table") %>%
   html_table() %>%
-  janitor::row_to_names(row_number = 1) %>%
-  janitor::clean_names() %>%
+  row_to_names(row_number = 1) %>%
+  clean_names() %>%
   rename(tm = "team") %>%
   mutate(
     tm = case_when(
